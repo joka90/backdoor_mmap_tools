@@ -55,3 +55,18 @@ How to use
 
 	`kallsymsprint`
 
+How to build
+========
+
+* Download and unpack android-ndk-r10e-linux-x86_64.zip from https://developer.android.com/ndk/downloads/older_releases.html
+
+* Add to path
+
+        `export PATH=$PATH:~/android-ndk-r10e`
+
+* Download sources
+        `git clone --recursive git@github.com:joka90/backdoor_mmap_tools.git`
+
+* Build
+       `cd backdoor_mmap_tools && ndk-build NDK_PROJECT_PATH=. APP_PLATFORM=android-15 APP_ALLOW_MISSING_DEPS=true APP_BUILD_SCRIPT=./Android.mk`
+
